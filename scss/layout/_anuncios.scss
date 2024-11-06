@@ -1,0 +1,80 @@
+/* Estilos de los anuncios */
+@include tablet{
+    .contenedor-anuncios{
+        @include grid(3, 2rem)
+    }
+}
+.anuncio{
+    background-color: lighten($gris_claro, 2);
+    border: 1px solid darken($gris_oscuro, 10);
+    .contenedor-anuncio{
+        padding: 2rem;
+    }
+    h3,p{
+        margin: 0;
+    }
+    .precio{
+        color: $verde;
+        font-weight: $bold;
+        font-size: 2.4rem;
+    }
+    
+}
+.anuncio img{
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+}
+.iconos-caracteristicas{
+    /*@include grid(3, 2rem)*/
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 30rem;
+    li{
+        flex: 1;
+        display: flex;
+        img{
+            flex: 0 0 5rem;
+            margin-right: 1rem;
+            width: 20px;
+            height: 30px;
+            object-fit: contain;
+        }
+        p{
+            font-weight: $black;
+        }
+    }
+}
+.contenido-centrado{
+    max-width: 80rem;
+    margin: auto;
+    padding: 1rem 3rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    img{
+        border-radius: 20px;
+        height: 600px;
+        object-fit: cover;
+    }
+    h1{
+        text-align: center;
+        color: $verde;
+    }
+    .precio{
+        color: $verde;
+        font-weight: $black;
+        font-size: 3rem;
+    }
+}
+.entrada-1{
+    margin-top: 3em;
+}
+.blog{
+    margin-top: 3em;
+    max-width: 80rem;
+    margin: auto;
+    padding: 1rem 3rem;
+    border: 1px solid black;
+    border-radius: 20px;
+}

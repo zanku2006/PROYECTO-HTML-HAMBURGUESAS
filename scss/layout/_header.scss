@@ -1,0 +1,43 @@
+.inicio {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("../images/banner.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+header{
+    background-color: $gris_oscuro;
+    padding: 1em 0em 3em 0em;
+    margin-bottom: 3em;
+    &.inicio{
+        background-position: center center;
+        background-size: 100% 100%;/* Toma el tamaño disponible */
+        @include tablet{
+            min-height: 30rem;
+        }
+        .contenido-header{
+            @include tablet{
+                min-height: 30rem;
+            }
+        }
+    }
+}
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet{
+        min-height: 30rem;
+    }
+    h1{
+        text-align: center;
+        color: $blanco;
+        font-weight: bold;
+        line-height: 1.5;
+        max-width: 100%;
+        text-shadow: 0 0 20px #ff9900, 
+                     0 0 30px #ff6600, 
+                     0 0 40px #ff3300, 
+                     0 0 50px #ff0000;
+    }
+}

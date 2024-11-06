@@ -1,0 +1,44 @@
+/*Estilos de los Iconos*/
+.icono{
+    text-align: center;
+    img{
+        width: 10rem;
+        height: 10rem;
+        margin: auto;
+    }
+    h3{
+        text-transform:uppercase;
+    }
+}
+
+@include tablet{
+.iconos-nosotros{
+    
+    @include grid(3,2rem);
+    p{
+    color:black;
+    font-size: 1.8rem;
+    }
+    h3{
+        color:black;
+    }
+}
+}
+@include telefono{
+    p{
+        color:black;
+        font-size: 1.3rem;
+
+        }
+    .icono img{
+        width: 70px;
+        height: 70px;
+    }
+    h3{
+        font-size: 20px;
+        color: $cafe;
+    }
+}
+main h2{
+    text-align: center;
+}
